@@ -2,21 +2,28 @@
     padding: 0;
     margin: 0;
   }
-  /* add street lines 
-  add background to fill in white 
+  /* add street lines
+  add background to fill in white
   create scoreboard counter
-  create start now screen 
+  create start now screen
   create game over reset screen  */
-  #gameArea{
-    width: 300px;
-    height: 500px;
-    background-color: grey;
-    border-left: 5px solid yellow;
+   #gameArea{
+    width: 500px;
+    height: 800px;
+     background-color: rgb(32, 31, 31);
+     background-image:url('roadNS1.png') ;
+
+     background-size:cover;
+
+      background-position: center;
+     background-repeat: no-repeat;
+     border-left: 5px solid yellow;
     border-right: 5px solid yellow;
-    
-    margin: auto;
-    box-sizing: border-box;
+    overflow: hidden;
+     margin: auto;
+     box-sizing: border-box;
   }
+
   #player{
     width: 100px;
     height: 100px;
@@ -27,23 +34,117 @@
     top: 300px;
     left: 0px;
   }
-  
-  #enemy{
+
+/*
+  traffic to avoid */
+
+  #police{
     width: 100px;
     height: 100px;
-    top: 500px;
+    top: 900px;
     background-image: url('Police.png');
     background-position: center;
     background-size: contain;
     position: relative;
+    animation: slide 1s infinite linear;
+  }
+  @keyframes slide{
+    0%{top:-100px};
+    100%{top:900px};
+  }
+
+  #score{
+    margin: auto;
+    color: red;
+    font-family: fantasy;
+    font-size: 50px;
+    position: absolute;
+    left: 630px;
+    text-shadow: 4px 4px blue;
+
+}
+#title{
+ 
+  margin: auto;
+  width: 85px;
+  font-family: fantasy;
+  color: red;
+  font-size: 50px ;
+  position: absolute;
+  left: 490px;
+  text-shadow: 4px 4px blue;
+
+}
+/* #highscore{
+  margin: auto;
+  color: red;
+  font-family: fantasy;
+  font-size: 50px;
+  position: absolute;
+  left: 670px;
+  top:300px;
+  text-shadow: 4px 4px blue;
+} */
+
+/* #title2{
+  margin: auto;
+  width: 85px;
+  font-family: fantasy;
+  color: red;
+  font-size: 50px ;
+  position: absolute;
+  left: 420px;
+  top: 300px;
+  text-shadow: 4px 4px blue;
+
+} */
+
+    .exit{
+    top: 800px;
+    z-index: 100;
+    position: absolute;
+    width: 490px;
+    height: 130px;
+    background-color:black;
+    border: 5px dashed grey;
   }
 
 
+     body{
+    background-image: url('freeway.jpg');
+  }
 
 
+  #restart {
+    width: auto;
+    height:auto;
+    margin: auto;
+    font-family: fantasy;
+    font-size: 100px;
+    position: absolute;
+    left: 500px;
+    top: 150px;
+    background-color:orangered ;
+    position: absolute;
+    justify-content: center;
+    text-align: center;
+   display: none;
+   /* display: inline-block; */
+  
+  
+  }
 
+  button{
+    font-size: xx-large;
+    background-color:green;
+    border:none;
+    color: white;
+    position: relative;
+    border-radius: 4px;
+    border: 1px solid black;
+  }
 
-  /* for instructor to read 
-  broke initial repository so older code 
-  and initial code cant be seen unless opened up 
+  /* for instructor to read
+  broke initial repository so older code
+  and initial code cant be seen unless opened up
   MileStonePorj in github  */

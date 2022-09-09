@@ -10,10 +10,24 @@
 <body>
     <div id = "gameArea">
         
-        <div id ="enemy" ></div>
+        <div id ="police" ></div>
         <div id = "player"></div>
-        
+        <div id="title">Score: </div>
+        <div id="score">0</div> 
+        <div class="exit">
+        </div>
+        <!-- <div id="title2">HighScore:</div>
+        <div id="highscore">0</div> -->
     </div>
+    <div id="restart">
+        <p> BUSTED!<br>
+         Click to Restart Chase<br>
+         </p>  
+         <button class = "resetgame" onclick ="window.location.reload();">
+             RESET 
+         </button>
+    </div>
+ 
     <script src="script.js"></script>
 </body>
 
